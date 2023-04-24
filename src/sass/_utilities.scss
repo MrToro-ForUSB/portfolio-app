@@ -1,0 +1,35 @@
+@use 'colors';
+@use 'fonts';
+@use 'breakpoints' as media;
+
+/* buttons ========================================================================== */
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  padding: 16px 24px 16px 32px;
+
+  background-color: colors.gray(80);
+  color: colors.white();
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    width: fit-content;
+    background-color: colors.gray(80);
+    
+    border-radius: 4px;
+  }
+}
+.dark {
+  .btn {
+    &--primary {
+      background-color: colors.purple(70);
+    }
+  }
+}

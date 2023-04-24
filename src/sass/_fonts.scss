@@ -1,0 +1,19 @@
+@mixin get-heading($weight: 400) {
+  font-family: 'Anton', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin get-regular($weight: 400) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin get-secundary($weight: 600) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin get-black($weight: 900) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+}

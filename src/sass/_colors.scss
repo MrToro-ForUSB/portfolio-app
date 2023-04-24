@@ -1,0 +1,58 @@
+
+/* Gray ========================================================================== */
+@function gray($weight: 100, $alpha: 1) {
+  @if $weight == 100 {
+    @return hsla(0, 0%, 39%, $alpha);
+  } 
+  @else if $weight == 80 {
+    @return hsla(0, 0%, 16%, $alpha);
+  } 
+  @else if $weight == 20 {
+    @return hsla(0, 0%, 4%, $alpha);
+  } 
+  @else if $weight == 5 {
+    @return hsla(0, 0%, 1%, $alpha);
+  }
+  @else if $weight == 0 {
+    @return hsla(0, 0%, 0%, $alpha);
+  }
+}
+
+/* Purple ========================================================================== */
+@function purple($weight: 1, $alpha: 1) {
+  @if $weight == 10 {
+    @return hsla(261, 83%, 93%, $alpha);
+  } 
+  @else if $weight == 30 {
+    @return hsla(261, 83%, 79%, $alpha);
+  } 
+  @else if $weight == 50 {
+    @return hsla(261, 83%, 73%, $alpha);
+  } 
+  @else if $weight == 70 {
+    @return hsla(261, 83%, 66%, $alpha);
+  } 
+  @else if $weight == 100 {
+    @return hsla(261, 52%, 54%, $alpha);
+  }
+}
+
+/* Green ========================================================================== */
+@function green($weight: 100, $alpha: 1) {
+  @if $weight == 50 {
+    @return hsla(119, 96%, 96%, $alpha);
+  } 
+  @else if $weight == 100 {
+    @return hsla(119, 96%, 89%, $alpha);
+  }
+}
+
+/* Yellow ========================================================================== */
+@function yellow($weight: 100, $alpha: 1) {
+  @return hsla(52, 100%, 72%, $alpha);
+}
+
+/* White ========================================================================== */
+@function white($weight: 100, $alpha: 1) {
+  @return hsla(0, 0%, 100%, $alpha);
+}
